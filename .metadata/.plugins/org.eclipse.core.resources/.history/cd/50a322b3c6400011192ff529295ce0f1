@@ -1,0 +1,136 @@
+#include "cyhal.h"
+#include "cybsp.h"
+
+#include "arm_math.h"   // 🔥 CMSIS DSP
+
+#ifdef USE_AK4954A
+#include "mtb_ak4954a.h"
+#endif
+
+#define SAMPLE_RATE       16000
+#define FREQUENCY         1000.0f   // 1 kHz sinus
+#define AMPLITUDE         12000.0f
+#define DURATION_MS       500
+
+#define NUM_SAMPLES ((SAMPLE_RATE * DURATION_MS) / 1000)
+
+#define MCLK_FREQ_HZ        4083000u
+#define MCLK_DUTY_CYCLE     50.0f
+#define AUDIO_SYS_CLOCK_HZ  98000000u
+#define MCLK_PIN            P5_0
+#define HFCLK1_CLK_DIVIDER  4u
+
+#define BLUE P11_1
+
+/* Buffer */
+int16_t audio_buffer[NUM_SAMPLES * 2];
+
+/* HAL */
+cyhal_pwm_t mclk_pwm;
+cyhal_i2s_t i2s;
+cyhal_clock_t audio_clock;
+cyhal_clock_t pll_clock;
+
+/* I2S config */
+const cyhal_i2s_pins_t i2s_pins =
+{
+    .sck  = P5_1,
+    .ws   = P5_2,
+    .data = P5_3,
+    .mclk = NC,
+};
+
+const cyhal_i2s_config_t i2s_config =
+{
+    .is_tx_slave    = false,
+    .is_rx_slave    = false,
+    .mclk_hz        = 0,
+    .channel_length = 32,
+    .word_length    = 16,
+    .sample_rate_hz = SAMPLE_RATE,
+};
+
+/* ISR */
+void i2s_isr_handler(void *arg, cyhal_i2s_event_t event)
+{
+    (void)arg;
+    (void)event;
+
+    cyhal_i2s_stop_tx(&i2s);
+    cyhal_gpio_write(BLUE, CYBSP_LED_STATE_OFF);
+}
+
+/* Clock */
+void clock_init(void)
+{
+    cyhal_clock_reserve(&pll_clock, &CYHAL_CLOCK_PLL[0]);
+    cyhal_clock_set_frequency(&pll_clock, AUDIO_SYS_CLOCK_HZ, NULL);
+    cyhal_clock_set_enabled(&pll_clock, true, true);
+
+    cyhal_clock_reserve(&audio_clock, &CYHAL_CLOCK_HF[1]);
+    cyhal_clock_set_source(&audio_clock, &pll_clock);
+    cyhal_clock_set_divider(&audio_clock, HFCLK1_CLK_DIVIDER);
+    cyhal_clock_set_enabled(&audio_clock, true, true);
+}
+
+/* 🔥 Sinus generator met ARM math */
+void generate_sine(void)
+{
+    for (int i = 0; i < NUM_SAMPLES; i++)
+    {
+        float32_t angle = 2.0f * PI * FREQUENCY * ((float32_t)i / SAMPLE_RATE);
+
+        float32_t s;
+        arm_sin_f32(angle, &s);   // 🔥 ARM DSP functie
+
+        int16_t sample = (int16_t)(s * AMPLITUDE);
+
+        audio_buffer[2*i]     = sample;
+        audio_buffer[2*i + 1] = sample;
+    }
+}
+
+int main(void)
+{
+    cybsp_init();
+    __enable_irq();
+
+    clock_init();
+
+    cyhal_gpio_init(BLUE, CYHAL_GPIO_DIR_OUTPUT,
+                    CYHAL_GPIO_DRIVE_STRONG, CYBSP_LED_STATE_OFF);
+
+    cyhal_gpio_init(CYBSP_USER_BTN, CYHAL_GPIO_DIR_INPUT,
+                    CYHAL_GPIO_DRIVE_PULLUP, CYBSP_BTN_OFF);
+
+    cyhal_pwm_init(&mclk_pwm, MCLK_PIN, NULL);
+    cyhal_pwm_set_duty_cycle(&mclk_pwm, MCLK_DUTY_CYCLE, MCLK_FREQ_HZ);
+    cyhal_pwm_start(&mclk_pwm);
+
+    cyhal_system_delay_ms(1);
+
+    cyhal_i2s_init(&i2s, &i2s_pins, NULL, &i2s_config, &audio_clock);
+    cyhal_i2s_register_callback(&i2s, i2s_isr_handler, NULL);
+    cyhal_i2s_enable_event(&i2s,
+                           CYHAL_I2S_ASYNC_TX_COMPLETE,
+                           CYHAL_ISR_PRIORITY_DEFAULT,
+                           true);
+
+    for (;;)
+    {
+        if (cyhal_gpio_read(CYBSP_USER_BTN) == CYBSP_BTN_PRESSED)
+        {
+            generate_sine();
+
+            cyhal_i2s_start_tx(&i2s);
+
+            cyhal_i2s_write_async(&i2s,
+                                  audio_buffer,
+                                  NUM_SAMPLES * 2);
+
+            cyhal_gpio_write(BLUE, CYBSP_LED_STATE_ON);
+
+            cyhal_system_delay_ms(300);
+        }
+    }
+}

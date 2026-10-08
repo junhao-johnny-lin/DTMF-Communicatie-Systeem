@@ -1,0 +1,312 @@
+19:45:19 **** Build of configuration Debug for project DTMF_Ontvanger ****
+"C:\\Users\\Hansv\\ModusToolbox\\tools_3.5\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Hansv/ModusToolbox/tools_3.5 CY_IDE_BT_TOOLS_DIR= -j16 build_proj 
+Tools Directory: C:/Users/Hansv/ModusToolbox/tools_3.5
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Hansv/ModusToolbox/tools_3.4 /cygdrive/c/Users/Hansv/ModusToolbox/tools_3.5 C:/Users/Hansv/ModusToolbox/tools_3.4 C:/Users/Hansv/ModusToolbox/tools_3.5". This build is currently using "C:/Users/Hansv/ModusToolbox/tools_3.5". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Hansv/ModusToolbox/tools_3.5/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-psoc6-pdm-pcm Debug APP_CY8CKIT-062-WIFI-BT GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/startup_psoc6_01_cm4.o
+[2/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/COMPONENT_CM4/system_psoc6_cm4.o
+[3/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/bluetooth/cybsp_bt_config.o
+[4/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_capsense.o
+[5/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_peripherals.o
+[6/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_qspi_memslot.o
+[7/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_routing.o
+[8/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/local/dtmf.o
+[9/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/local/goertzel.o
+[10/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[11/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/psoc6_01_cm0p_sleep.o
+[12/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg.o
+[13/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/psoc6_02_cm0p_sleep.o
+[14/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_clocks.o
+[15/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/psoc6_04_cm0p_sleep.o
+[16/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/psoc6_03_cm0p_sleep.o
+[17/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/tviibe2m_cm0p_sleep.o
+[18/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/tviibe1m_cm0p_sleep.o
+[19/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_pins.o
+[20/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/xmc5100_cm0p_sleep.o
+[21/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/tviibe4m_cm0p_sleep.o
+[22/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/tviibe512k_cm0p_sleep.o
+[23/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/config/GeneratedSource/cycfg_system.o
+[24/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/bsps/APP_CY8CKIT-062-WIFI-BT/cybsp.o
+[25/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/xmc5200_cm0p_sleep.o
+[26/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/display-tft-st7789v/configs/emwin/GUIConf.o
+[27/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/xmc5300_cm0p_sleep.o
+[28/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/audio-codec-ak4954a/mtb_ak4954a.o
+[29/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/CY8CKIT-028-TFT/cy8ckit_028_tft.o
+[30/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/local/main.o
+[31/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/BMI160_driver/bmi160.o
+[32/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/display-tft-st7789v/configs/emwin/LCDConf.o
+[33/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble_usb.o
+[34/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/display-tft-st7789v/configs/emwin/GUI_X.o
+[35/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble.o
+[36/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_usb.o
+[37/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_ble.o
+[38/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_43_smt.o
+[39/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga.o
+[40/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_68_qfn_ble.o
+[41/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/display-tft-st7789v/mtb_st7789v.o
+[42/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga_sip.o
+[43/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_100_wlcsp.o
+[44/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_80_wlcsp.o
+[45/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_124_bga.o
+[46/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_68_qfn.o
+[47/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_100_tqfp.o
+[48/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_49_wlcsp.o
+[49/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_128_tqfp.o
+[50/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_68_qfn.o
+[51/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_64_tqfp.o
+[52/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_m_csp.o
+[53/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_68_qfn.o
+[54/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_tqfp.o
+[55/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_80_lqfp.o
+[56/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_176_lqfp.o
+[57/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_100_lqfp.o
+[58/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_64_lqfp.o
+[59/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_144_lqfp.o
+[60/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_144_lqfp.o
+[61/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_100_lqfp.o
+[62/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_176_lqfp.o
+[63/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_64_lqfp.o
+[64/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_144_lqfp.o
+[65/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_100_lqfp.o
+[66/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_80_lqfp.o
+[67/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_176_lqfp.o
+[68/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_64_lqfp.o
+[69/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_80_lqfp.o
+[70/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_02.o
+[71/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_01.o
+[72/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_03.o
+[73/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_04.o
+[74/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe1m.o
+[75/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe2m.o
+[76/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_mic.o
+[77/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe4m.o
+[78/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_analog_common.o
+[79/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_sar.o
+[80/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp.o
+[81/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_audio_common.o
+[82/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_clock.o
+[83/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crc.o
+[84/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_ctb.o
+[85/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_lp.o
+[86/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crypto_common.o
+[87/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dac.o
+[88/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma.o
+[89/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dw.o
+[90/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2s.o
+[91/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ezi2c.o
+[92/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_hwmgr.o
+[93/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dmac.o
+[94/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_gpio.o
+[95/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2c.o
+[96/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_interconnect.o
+[97/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_irq_impl.o
+[98/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ipc.o
+[99/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_keyscan.o
+[100/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_opamp.o
+[101/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_nvm.o
+[102/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_lptimer.o
+[103/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pdmpcm.o
+[104/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pwm.o
+[105/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_quaddec.o
+[106/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_system.o
+[107/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_sdhc.o
+[108/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_qspi.o
+[109/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_rtc.o
+[110/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_scb_common.o
+[111/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tdm.o
+[112/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_syspm.o
+[113/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tcpwm_common.o
+[114/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_timer.o
+[115/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_adcmic.o
+[116/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_trng.o
+[117/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_spi.o
+[118/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_axidmac.o
+[119/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/devices/COMPONENT_CAT1A/source/cy_device.o
+[120/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ble_clk.o
+[121/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cordic.o
+[122/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_canfd.o
+[123/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_udb_sdio.o
+[124/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v2.o
+[125/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils.o
+[126/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v1.o
+[127/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_usb_dev.o
+[128/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v1.o
+[129/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto.o
+[130/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_wdt.o
+[131/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_uart.o
+[132/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v2.o
+[133/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v1.o
+[134/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v2.o
+[135/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v2.o
+[136/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v1.o
+[137/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils_impl.o
+[138/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_domain_params.o
+[139/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ec25519.o
+[140/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_key_gen.o
+[141/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ecdsa.o
+[142/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hkdf_v2.o
+[143/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v2.o
+[144/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v1.o
+[145/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw.o
+[146/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_eddsa.o
+[147/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v2.o
+[148/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw_v1.o
+[149/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v1.o
+[150/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v2.o
+[151/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v1.o
+[152/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_nist_p.o
+[153/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v1.o
+[154/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_trng.o
+[155/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v2.o
+[156/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes.o
+[157/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes_ccm.o
+[158/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_cmac.o
+[159/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_eddsa.o
+[160/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_vu.o
+[161/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_ec25519.o
+[162/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_utils.o
+[163/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hkdf.o
+[164/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_vu.o
+[165/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_key_gen.o
+[166/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecdsa.o
+[167/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_server.o
+[168/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_csd.o
+[169/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hmac.o
+[170/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_nist_p.o
+[171/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_rsa.o
+[172/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_rsa.o
+[173/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_sha256.o
+[174/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_trng.o
+[175/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctb.o
+[176/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse.o
+[177/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctdac.o
+[178/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dmac.o
+[179/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dma.o
+[180/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse_v3.o
+[181/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ephy.o
+[182/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ethif.o
+[183/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_evtgen.o
+[184/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_v2.o
+[185/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_csg.o
+[186/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_srom.o
+[187/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass.o
+[188/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_ac.o
+[189/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash.o
+[190/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_gpio.o
+[191/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_sar.o
+[192/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_bt.o
+[193/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lin.o
+[194/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_keyscan.o
+[195/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_pipe.o
+[196/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd.o
+[197/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_i2s.o
+[198/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_sema.o
+[199/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd_ht.o
+[200/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_drv.o
+[201/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt_b.o
+[202/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mixer.o
+[203/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt.o
+[204/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lpcomp.o
+[205/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mpc.o
+[206/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm_v2.o
+[207/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ppc.o
+[208/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm.o
+[209/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ms_ctl.o
+[210/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra.o
+[211/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra_cfg.o
+[212/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_profile.o
+[213/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_prot.o
+[214/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sd_host.o
+[215/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_hb_flash.o
+[216/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_common.o
+[217/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_ezi2c.o
+[218/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar2.o
+[219/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar.o
+[220/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_rtc.o
+[221/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_uart.o
+[222/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smartio.o
+[223/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_seglcd.o
+[224/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysanalog.o
+[225/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_spi.o
+[226/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_i2c.o
+[227/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif.o
+[228/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk_v2.o
+[229/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_sfdp.o
+[230/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_memslot.o
+[231/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint_v2.o
+[232/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysfault.o
+[233/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint.o
+[234/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_btss.o
+[235/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syslib.o
+[236/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_pdcm.o
+[237/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_ppu.o
+[238/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v2.o
+[239/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v3.o
+[240/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk.o
+[241/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v4.o
+[242/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick_v2.o
+[243/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm.o
+[244/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick.o
+[245/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_counter.o
+[246/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_motif.o
+[247/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_quaddec.o
+[248/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_shiftreg.o
+[249/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_pwm.o
+[250/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tdm.o
+[251/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_trigmux.o
+[252/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv.o
+[253/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt.o
+[254/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/ppu_v1.o
+[255/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt_b.o
+[256/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io.o
+[257/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd.o
+[258/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_rx.o
+[259/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_tx.o
+[260/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/utils/TOOLCHAIN_GCC_ARM/mtb_stdlib_stubs.o
+[261/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io_dma.o
+[262/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/udb-sdio-whd/COMPONENT_UDB_SDIO_P2/SDIO_HOST_cfg.o
+[263/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/sensor-light/mtb_light_sensor.o
+[264/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/retarget-io/source/cy_retarget_io.o
+[265/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/sensor-motion-bmi160/mtb_bmi160.o
+[266/267] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/Debug/libraries_shared/udb-sdio-whd/SDIO_HOST.o
+[267/267] Linking, creating elf file build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.elf
+C:/Users/Hansv/Infineon/Tools/mtb-gcc-arm-eabi/11.3.1/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.elf C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/DTMF_Ontvanger/build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6247BZI-D54 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  6580       | 
+  | .text                |  0x10002000   |  118692     | 
+  | .ARM.exidx           |  0x1001efa4   |  8          | 
+  | .copy.table          |  0x1001efac   |  24         | 
+  | .zero.table          |  0x1001efc4   |  8          | 
+  | .data                |  0x0800228c   |  1300       | 
+  | .cy_sharedmem        |  0x080027a0   |  12         | 
+  | .noinit              |  0x080027b0   |  236        | 
+  | .bss                 |  0x0800289c   |  35992      | 
+  | .heap                |  0x0800b538   |  242376     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           128236     
+
+
+19:45:35 Build Finished. 0 errors, 0 warnings. (took 16s.421ms)
+

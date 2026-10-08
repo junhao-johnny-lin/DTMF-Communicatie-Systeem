@@ -1,0 +1,20 @@
+#include "goertzel.h"
+#include <math.h>
+
+float goertzel(int16_t *data, int N, float freq, float sample_rate)
+{
+    float s_prev = 0;
+    float s_prev2 = 0;
+
+    float normalized_freq = freq / sample_rate;
+    float coeff = 2 * cosf(2 * M_PI * normalized_freq);
+
+    for (int i = 0; i < N; i++)
+    {
+        float s = data[i] + coeff * s_prev - s_prev2;
+        s_prev2 = s_prev;
+        s_prev = s;
+    }
+
+    return s_prev2 * s_prev2 + s_prev * s_prev - coeff * s_prev * s_prev2;
+}

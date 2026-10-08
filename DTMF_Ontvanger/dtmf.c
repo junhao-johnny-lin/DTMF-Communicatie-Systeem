@@ -1,0 +1,57 @@
+#include "dtmf.h"
+#include <math.h>
+
+#define AMPLITUDE 12000
+#define PI        3.14159265358979f
+
+int16_t audio_buffer[NUM_SAMPLES * 2];
+
+void generate_dtmf(float f1, float f2)
+{
+    for (int i = 0; i < NUM_SAMPLES; i++)
+    {
+        float t = (float)i / SAMPLE_RATE;
+
+        float sample =
+            sinf(2.0f * PI * f1 * t) +
+            sinf(2.0f * PI * f2 * t);
+
+        sample *= (AMPLITUDE / 2.0f);
+
+        if (sample > 32767.0f) sample = 32767.0f;
+        if (sample < -32768.0f) sample = -32768.0f;
+
+        int16_t s = (int16_t)sample;
+
+        audio_buffer[2 * i]     = s;
+        audio_buffer[2 * i + 1] = s;
+    }
+}
+
+void generate_dtmf_digit(char digit)
+{
+    switch (digit)
+    {
+        case '1': generate_dtmf(697.0f, 1209.0f); break;
+        case '2': generate_dtmf(697.0f, 1336.0f); break;
+        case '3': generate_dtmf(697.0f, 1477.0f); break;
+        case 'A': generate_dtmf(697.0f, 1633.0f); break;
+
+        case '4': generate_dtmf(770.0f, 1209.0f); break;
+        case '5': generate_dtmf(770.0f, 1336.0f); break;
+        case '6': generate_dtmf(770.0f, 1477.0f); break;
+        case 'B': generate_dtmf(770.0f, 1633.0f); break;
+
+        case '7': generate_dtmf(852.0f, 1209.0f); break;
+        case '8': generate_dtmf(852.0f, 1336.0f); break;
+        case '9': generate_dtmf(852.0f, 1477.0f); break;
+        case 'C': generate_dtmf(852.0f, 1633.0f); break;
+
+        case '*': generate_dtmf(941.0f, 1209.0f); break;
+        case '0': generate_dtmf(941.0f, 1336.0f); break;
+        case '#': generate_dtmf(941.0f, 1477.0f); break;
+        case 'D': generate_dtmf(941.0f, 1633.0f); break;
+
+        default: generate_dtmf(770.0f, 1336.0f); break;
+    }
+}

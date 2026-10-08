@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+indexer/indexAllFiles=false
+indexer/indexAllHeaderVersions=false
+indexer/indexUnusedHeadersWithAlternateLang=false
+indexer/updatePolicy=2

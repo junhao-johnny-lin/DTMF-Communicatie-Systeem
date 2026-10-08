@@ -1,0 +1,48 @@
+16:46:22 **** Incremental Build of configuration Debug for project OntvangersTest ****
+"C:\\Users\\Hansv\\ModusToolbox\\tools_3.5\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Hansv/ModusToolbox/tools_3.5 CY_IDE_BT_TOOLS_DIR= -j16 build_proj 
+Tools Directory: C:/Users/Hansv/ModusToolbox/tools_3.5
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Hansv/ModusToolbox/tools_3.4 /cygdrive/c/Users/Hansv/ModusToolbox/tools_3.5 C:/Users/Hansv/ModusToolbox/tools_3.4 C:/Users/Hansv/ModusToolbox/tools_3.5". This build is currently using "C:/Users/Hansv/ModusToolbox/tools_3.5". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Hansv/ModusToolbox/tools_3.5/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-psoc6-pdm-pcm Debug APP_CY8CKIT-062-WIFI-BT GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/OntvangersTest'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/3] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/OntvangersTest/build/Debug/local/goertzel.o
+[2/3] Building object file C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/OntvangersTest/build/Debug/local/main.o
+[3/3] Linking, creating elf file build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.elf
+C:/Users/Hansv/Infineon/Tools/mtb-gcc-arm-eabi/11.3.1/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/OntvangersTest/build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.elf C:/Users/Hansv/mtw/DTMF/2eai-ap-dtmf-team-jojo/OntvangersTest/build/APP_CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-pdm-pcm.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6247BZI-D54 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  6580       | 
+  | .text                |  0x10002000   |  55552      | 
+  | .ARM.exidx           |  0x1000f900   |  8          | 
+  | .copy.table          |  0x1000f908   |  24         | 
+  | .zero.table          |  0x1000f920   |  8          | 
+  | .data                |  0x0800228c   |  1604       | 
+  | .cy_sharedmem        |  0x080028d0   |  12         | 
+  | .noinit              |  0x080028e0   |  236        | 
+  | .bss                 |  0x080029cc   |  1928       | 
+  | .heap                |  0x08003158   |  276136     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           65400      
+
+
+16:46:26 Build Finished. 0 errors, 0 warnings. (took 3s.994ms)
+

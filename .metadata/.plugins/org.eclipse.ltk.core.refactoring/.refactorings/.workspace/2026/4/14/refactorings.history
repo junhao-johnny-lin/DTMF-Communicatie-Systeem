@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;DTMF_Zender/wave.h&apos;" deleteContents="false" description="Delete resource &apos;DTMF_Zender/wave.h&apos;" element1="/DTMF_Zender/wave.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1775227147274"/>&#x0A;&#x0A;<refactoring comment="Delete resource &apos;DTMF_Zender/wave.c&apos;" deleteContents="false" description="Delete resource &apos;DTMF_Zender/wave.c&apos;" element1="/DTMF_Zender/wave.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1775227158098"/>
+</session>
